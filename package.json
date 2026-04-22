@@ -1,0 +1,24 @@
+{
+  "name": "vt-telegram-bot",
+  "version": "1.0.0",
+  "description": "virustotal telegram bot with mongodb and render deployment",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "form-data": "^4.0.0",
+    "mongoose": "^8.3.4",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

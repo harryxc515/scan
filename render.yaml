@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: vt-telegram-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bot.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_TOKEN
+        sync: false
+      - key: VT_API_KEY
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
+      - key: PORT
+        value: 3000
